@@ -14,7 +14,8 @@
 
 - [betterQuests](https://github.com/kvbaxi/VencordPlugins/blob/main/betterQuests.tsx) - Puts easier accessible button to quests on home screen (https://github.com/Vencord/plugin-requests/issues/361)
   ![image](https://github.com/kvbaxi/VencordPlugins/assets/47297843/24b7d597-7f32-46f3-a5c0-a55bd679fcb0)
-
+> [!NOTE]  
+> This plugin is currently pull requested on https://github.com/Vendicated/Vencord/pull/2364
 
 
 ## ❔ How to install third party plugins?
