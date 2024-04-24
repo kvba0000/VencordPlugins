@@ -29,7 +29,7 @@
 
 ## 💬 Upcoming plugins:
 
-- [ImaageUtilities]() - Introduces a lot of new utilities making experience with images on Discord a lot easier! (https://github.com/Vencord/plugin-requests/issues/350)  
+- [ImageUtilities]() - Introduces a lot of new utilities making experience with images on Discord a lot easier! (https://github.com/Vencord/plugin-requests/issues/350)  
   <a href="https://discord.com/channels/1015060230222131221/1032770730703716362/1231464903563284590"><p align="center"><img src="https://github.com/kvbaxi/VencordPlugins/assets/47297843/d448a23f-e740-48f6-8b83-03061dc7853c" height="300" alt="Screenshot of the plugin/teaser"></a><br><sub>[Screenshot presenting active working on the plugin.]</sub></p>
 
 
