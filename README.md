@@ -9,6 +9,8 @@
 > [Vencord](https://github.com/Vendicated/Vencord) is a mod for Discord which breaks TOS, though Discord doesn't ban for it. If you really care about your account then better don't use it.
 
 ## 💻 Plugins included:
+> [!NOTE]
+> Plugins put in pull request **might be outdated**! I'm focusing on providing the most recent version for Vencord first. If you need them you can check appropriate branch of [my Vencord fork](https://github.com/kvbaxi/Vencord)
 - [noAppsAllowed](https://github.com/kvbaxi/VencordPlugins/blob/main/noAppsAllowed.tsx) - Replaces recently changed "APP" tag back into "BOT" tag. Useful for example in slavic languages where text gets hilariously long.  
   <p align="center">
     <img src="https://github.com/kvbaxi/VencordPlugins/assets/47297843/484b08d7-4bd8-41a0-9452-00c8cf2edfaa" height="300" alt="Screenshot of the plugin/teaser">
