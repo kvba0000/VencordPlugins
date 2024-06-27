@@ -7,19 +7,19 @@
 import "./style.css";
 
 import ErrorBoundary from "@components/ErrorBoundary";
-import { Devs } from "@utils/constants";
 import definePlugin from "@utils/types";
-import { extractAndLoadChunksLazy, findByPropsLazy, findComponentByCodeLazy, findExportedComponentLazy, findStoreLazy } from "@webpack";
+import { extractAndLoadChunksLazy, findByPropsLazy, findComponentByCodeLazy, findStoreLazy } from "@webpack";
 import { useEffect, useState } from "@webpack/common";
 
 
-const LinkButton = findExportedComponentLazy("LinkButton"); // let {route: e, selected: t, icon: n, iconClassName: a, interactiveClassName: s, text: r, children: o, locationState: d, onClick: f, className: p, role: m, "aria-posinset": C, "aria-setsize": g, ...E} = this.props;
-const NumberBadge = findExportedComponentLazy("NumberBadge"); // let { count: l } = this.props
+const LinkButton = findComponentByCodeLazy("route:", ",selected:", ",icon:", ",iconClassName:"); // let {route: e, selected: t, icon: n, iconClassName: l, interactiveClassName: r, text: s, children: o, locationState: u, onClick: h, className: _, role: f, "aria-posinset": g, "aria-setsize": m, ...C} = this.props;
+const NumberBadge = findComponentByCodeLazy("count:", ",color:", ",disableColor:", ",shape:"); // let {count: t, color: n=o.Z.STATUS_DANGER, disableColor: r=!1, shape: c=l.ROUND, className: d, style: E, ...I} = e;
 const QuestsComponent = findComponentByCodeLazy(".questsContainer"); // No nessessary props to include
 
 const questsStore = findStoreLazy("QuestsStore");
 
-const requireSettingsMenu = extractAndLoadChunksLazy(['name:"UserSettings"'], /createPromise:.{0,20}Promise\.all\((\[\i\.\i\(".+?"\).+?\])\).then\(\i\.bind\(\i,"(.+?)"\)\).{0,50}"UserSettings"/);
+
+const requireSettingsMenu = extractAndLoadChunksLazy(['name:"UserSettings"']);
 const nav: NavigationSettings = findByPropsLazy("transitionTo", "transitionToGuild", "getHistory");
 
 
@@ -95,7 +95,7 @@ const redirectRoute = (ev: BeforeUnloadEvent) => {
 export default definePlugin({
     name: "BetterQuests",
     description: "Puts the quest button in more accessibile place.",
-    authors: [Devs.kvba],
+    authors: [{ name: "kvba", id: 105170831130234880n }],
 
     start: () => window.addEventListener("beforeunload", redirectRoute),
     stop: () => window.removeEventListener("beforeunload", redirectRoute),
@@ -117,16 +117,17 @@ export default definePlugin({
             }
         },
         { // Add new route
-            find: "Routes.MESSAGE_REQUESTS,render:",
+            find: ".MESSAGE_REQUESTS,render:",
             replacement: {
-                match: /\((0,.{0,10}\.jsx\)\(.{0,10}\.default,){path:.{0,10}\.Routes\.MESSAGE_REQUESTS,.{0,100}?\),/,
+                // match: /\((0,.{0,10}\.jsx\)\(.{0,10}\.default,){path:.{0,10}\.\i\.MESSAGE_REQUESTS,.{0,100}?\),/,
+                match: /\((0,\i\.jsx\)\(\i\.\i,){path:.\i\.\i\.MESSAGE_REQUESTS,.{0,200}?\),/,
                 replace: "$&...$self.routes.map(r => (($1r))),"
             }
         },
         {
             find: 'on("LAUNCH_APPLICATION"',
             replacement: {
-                match: /path:\[.{0,500}Routes\.MESSAGE_REQUESTS,/,
+                match: /path:\[.{0,500}\i\.MESSAGE_REQUESTS,/,
                 replace: "$&...$self.paths,"
             }
         }
