@@ -26,8 +26,7 @@
   <p align="center">
     <img src="https://github.com/kvbaxi/VencordPlugins/assets/47297843/037fcf02-fc2b-47fd-92f7-482c1c18cc2e" height="300" alt="Screenshot of the plugin/teaser">
   </p>
-> [!NOTE]  
-> This plugin is currently **pull requested** on https://github.com/Vendicated/Vencord/pull/2380
+
 
 ## 💬 Upcoming plugins:
 
@@ -36,7 +35,7 @@
 
 
 ## ❔ How to install third party plugins?
-https://github.com/Vendicated/Vencord/blob/main/docs/1_INSTALLING.md
+https://docs.vencord.dev/installing/custom-plugins/
 
 <img src="https://github.com/kvbaxi/VencordPlugins/assets/47297843/604afd40-2c62-4ec0-9eb3-3cff171882e0" alt="shiggy" height="200">
 
