@@ -1,9 +1,16 @@
 .quests-container {
     width: 100%;
-    overflow: hidden;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     background: var(--bg-overlay-chat,var(--background-primary));
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.quests-container > span[class^="spinner"] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
