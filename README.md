@@ -24,7 +24,7 @@
 
 - [betterQuests](https://github.com/kvbaxi/VencordPlugins/blob/main/betterQuests) - Puts easier accessible button to quests on home screen (https://github.com/Vencord/plugin-requests/issues/361)  
   <p align="center">
-    <img src="https://github.com/kvbaxi/VencordPlugins/assets/47297843/037fcf02-fc2b-47fd-92f7-482c1c18cc2e" height="300" alt="Screenshot of the plugin/teaser">
+    <img src="https://github.com/kvba0000/VencordPlugins/assets/47297843/a1793203-263e-4d6f-8b07-14f407bb2c4c" height="300" alt="Screenshot of the plugin/teaser">
   </p>
 
 
